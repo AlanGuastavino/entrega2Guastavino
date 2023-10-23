@@ -128,6 +128,6 @@ export const getProductsByCategory = (categoryId) => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(products.find((prod) => prod.id === categoryId));
-    });
+    }, 500);
   });
 };
