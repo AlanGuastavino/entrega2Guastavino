@@ -126,6 +126,8 @@ export const getProductById = (productId) => {
 };
 export const getProductsByCategory = (categoryId) => {
   return new Promise((resolve) => {
-    resolve(products.find((prod) => prod.id === categoryId));
+    setTimeout(() => {
+      resolve(products.find((prod) => prod.id === categoryId));
+    });
   });
 };
